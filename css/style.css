@@ -1,0 +1,233 @@
+/* Joe Vaughn
+style.css
+4/30/2019
+*/
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+	font-family: Ubuntu;
+	font-size: 16px;
+}
+header {
+	padding: .5em;
+	margin: .5em;
+}
+
+h1 {
+	font-family: "Roboto Slab";
+	font-size: 1.9em;
+	line-height: 1.2em;
+	padding-bottom: .5em;
+	text-shadow: .5px .5px;
+}
+
+#tagline {
+	font-size: 1.3em;
+	font-family: Roboto;
+	font-weight: 500;
+	line-height: 1.3em;
+}
+
+
+
+nav {
+	background-color: rgb(95, 8, 8); 
+	line-height: 2em;
+	margin-bottom: .5em;
+}
+
+nav li {
+	padding-right: .7em;
+	font-size: 1.3em;
+	line-height: 1.5em;
+	display: inline;
+	text-decoration: none;
+	color: white;
+}
+
+nav a {
+	color: white;
+}
+
+
+aside {
+	margin: 1em .5em;
+	padding: 1em .5em;;
+}
+
+/* Weather Feed 
+
+*/
+#weather-feed {
+	margin-bottom: .2em;
+	font-size: 1.1em;
+	float: right;
+	line-height: 1.1em;
+}
+.well {
+	background-color: white;
+	padding: .25em;
+	margin: .25em;
+}
+
+
+
+/*  SOCIAL ICONS */
+
+/* container */
+
+#share {
+	width: 100%;
+	height: auto;
+	align-content: center;
+}
+
+/* buttons */
+
+button {
+	display: inline-block;
+	line-height: 1.7em;
+	font-size: 1.3em;
+	padding: .15em .05em;
+	font-kerning: auto;
+	margin: .4em .5em;
+	background-color: rgb(95, 8, 8);
+	color: white;
+}
+
+button:hover {
+	opacity: .9;
+}
+
+#share a {
+	width: 2.7em;
+  height: auto;
+  display: inline-block;
+	margin: .4em .5em;
+  border-radius: 10%;
+  font-size: 1.8em;
+  color: #fff;
+  opacity: 0.75;
+	transition: opacity 0.15s linear;
+}
+
+#share a:hover {
+	opacity: .9;
+
+}
+/* icons */
+
+#share i {
+    position: relative;
+    margin: .35em;
+    padding: .2em .7em;
+}
+
+
+
+/* images and graphics */
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+		 background: #55acee;
+}
+
+main {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+#mobile-image {
+	max-width: 100%;
+	height: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  }
+
+#mobile-image {
+	width: 100vh;
+	height: auto;
+	padding-top: 1em;
+	padding-bottom: 1em; 
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#image-slideshow { 
+	display: none;
+
+}
+
+footer {
+	background-color: rgb(95, 8, 8);
+	line-height: 2.5em;
+	margin-bottom: 1em;
+	margin-top: 1em; 
+	color: white;
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 900px) {
+	nav {
+		line-height: 1.8em;
+		margin-bottom: .7em;
+	}
+
+	nav li {
+		padding-right: 1.2em;
+		padding-left: .6em;
+		font-size: 1.7em;
+		line-height: 1.45em;
+	}
+	main {
+		margin: 10em 15em/* Only for template purposes CHANGE FOR LIVE SITE */  2em;
+		padding: 1em 4em/* Only for template purposes CHANGE FOR LIVE SITE */ 2em;
+	}
+	aside {
+		float: left;
+		margin: .2em 1em 2em .1em;
+		padding: .2em 1em 2em .2em;
+		padding-bottom: 2em;
+	}
+	#weather-feed {
+		float: none;
+		font-size: 1.2em;
+	}
+	#share a {
+		display: block;
+	}
+	button {
+		display: block;
+	}
+	#mobile-image {
+		display: none;
+	}
+	#image-slideshow {
+		display: block;
+		padding: 2em 4em;
+		margin: 1em 2em 2em 10em;/* Only for template purposes CHANGE FOR LIVE SITE */
+	}
+
+}
