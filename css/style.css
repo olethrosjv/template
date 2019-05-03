@@ -14,24 +14,26 @@ body {
 	font-size: 16px;
 }
 header {
-	padding: .5em;
-	margin: .5em;
+	padding: .4em;
+	margin: .4em;
 }
 
 h1 {
 	font-family: "Roboto Slab";
-	font-size: 1.9em;
+	font-size: 2.2em;
 	line-height: 1.2em;
 	padding-bottom: .5em;
 	text-shadow: .5px .5px;
+	font-kerning: auto;
 }
 
 #tagline {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-family: Roboto;
 	font-weight: 500;
 	line-height: 1.3em;
 }
+
 
 
 
@@ -42,8 +44,9 @@ nav {
 }
 
 nav li {
-	padding-right: .7em;
-	font-size: 1.3em;
+	padding-right: .8em;
+	padding-left: .3em;
+	font-size: 1.2em;
 	line-height: 1.5em;
 	display: inline;
 	text-decoration: none;
@@ -52,12 +55,22 @@ nav li {
 
 nav a {
 	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	font-size: 1.1em;
 }
 
 
 aside {
 	margin: 1em .5em;
 	padding: 1em .5em;;
+}
+
+h2 {
+	font-size: 1.9em;
+	font-family: Roboto;
 }
 
 /* Weather Feed 
@@ -180,35 +193,41 @@ img {
 footer {
 	background-color: rgb(95, 8, 8);
 	line-height: 2.5em;
+	font-size: 1.2em;
 	margin-bottom: 1em;
 	margin-top: 1em; 
 	color: white;
 }
 
-@media screen and (min-width: 600px){
 
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 2.5em;
+		padding-left: 1em;
+	}
+	#tagline {
+		font-size: 2em;
+		padding-left: 2.5em;
+	}
 	nav {
 		line-height: 1.8em;
 		margin-bottom: .7em;
 	}
 
 	nav li {
-		padding-right: 1.2em;
-		padding-left: .6em;
-		font-size: 1.7em;
+		padding-right: .6em;
+		padding-left: .3em;
+		font-size: 1.5em;
 		line-height: 1.45em;
 	}
 	main {
-		margin: 10em 15em/* Only for template purposes CHANGE FOR LIVE SITE */  2em;
-		padding: 1em 4em/* Only for template purposes CHANGE FOR LIVE SITE */ 2em;
+		margin: 4em 2em;
+		padding: 1em 2em;
 	}
 	aside {
 		float: left;
-		margin: .2em 1em 2em .1em;
-		padding: .2em 1em 2em .2em;
+		margin: .2em 1em 2em 1em;
+		padding: .2em 1em 2em 1em;
 		padding-bottom: 2em;
 	}
 	#weather-feed {
@@ -227,7 +246,50 @@ footer {
 	#image-slideshow {
 		display: block;
 		padding: 2em 4em;
-		margin: 1em 2em 2em 10em;/* Only for template purposes CHANGE FOR LIVE SITE */
+		margin: 1em 2em 2em 15em;/* Only for template purposes CHANGE FOR LIVE SITE */
 	}
 
+	.picHolder {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+	}
+	.picHolder img {
+   /* top: 0;
+    left: 0;
+    width: 341px;
+    z-index: 8;*/
+	}
+	.picHolder img.active {
+    z-index: 10;
+	}
+	.picHolder img.last-active {
+    z-index: 9;
+	}
+
+}	
+
+@media screen and (min-width: 1024px) {
+	h1 {
+		font-size: 2.7em;
+		padding-left: 1.1em;
+	}
+	#tagline {
+		font-size: 2.5em;
+		padding-left: 2.6em;
+		padding-bottom: 1em;
+	}
+	nav li {
+		padding-right: 1.2em;
+		padding-left: 1em;
+		font-size: 1.8em;
+		line-height: 1.45em;
+	}
 }
+
+@media screen and (max-width: 360px) {
+	#tagline {
+		font-size: 1.3em;
+	}
+}	
