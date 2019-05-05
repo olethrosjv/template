@@ -12,6 +12,7 @@ style.css
 body {
 	font-family: Ubuntu;
 	font-size: 16px;
+	background-color: #fffff3;
 }
 header {
 	padding: .4em;
@@ -23,15 +24,16 @@ h1 {
 	font-size: 2.2em;
 	line-height: 1.2em;
 	padding-bottom: .5em;
-	text-shadow: .5px .5px;
+	text-shadow: 1px 1px;
 	font-kerning: auto;
 }
 
 #tagline {
 	font-size: 1.5em;
-	font-family: Roboto;
+	font-family: Ubuntu;
 	font-weight: 500;
 	line-height: 1.3em;
+	font-style: italic;
 }
 
 
@@ -40,7 +42,10 @@ h1 {
 nav {
 	background-color: rgb(95, 8, 8); 
 	line-height: 2em;
-	margin-bottom: .5em;
+	margin-bottom:.5em;
+	margin-left: .1em;
+	width: 99%;
+	border-radius: 5px;
 }
 
 nav li {
@@ -60,6 +65,7 @@ nav a {
 
 nav a:hover {
 	font-size: 1.1em;
+	transition: .5s;
 }
 
 
@@ -83,7 +89,6 @@ h2 {
 	line-height: 1.1em;
 }
 .well {
-	background-color: white;
 	padding: .25em;
 	margin: .25em;
 }
@@ -105,10 +110,10 @@ h2 {
 button {
 	display: inline-block;
 	line-height: 1.7em;
-	font-size: 1.3em;
-	padding: .15em .05em;
+	font-size: 1.25em;
+	padding: .15em 0;
 	font-kerning: auto;
-	margin: .4em .5em;
+	margin: .4em .7em;
 	background-color: rgb(95, 8, 8);
 	color: white;
 }
@@ -192,11 +197,15 @@ img {
 
 footer {
 	background-color: rgb(95, 8, 8);
-	line-height: 2.5em;
-	font-size: 1.2em;
+	line-height: 2.3em;
+	font-size: 1.4em;
 	margin-bottom: 1em;
 	margin-top: 1em; 
+	margin-left: .1em;
 	color: white;
+	width: 99%;
+	border-radius: 5px;
+	align-content: center;
 }
 
 
@@ -212,6 +221,7 @@ footer {
 	nav {
 		line-height: 1.8em;
 		margin-bottom: .7em;
+		margin-left: .3em;
 	}
 
 	nav li {
@@ -227,7 +237,7 @@ footer {
 	aside {
 		float: left;
 		margin: .2em 1em 2em 1em;
-		padding: .2em 1em 2em 1em;
+		padding: .2em 1em 2em .6em;
 		padding-bottom: 2em;
 	}
 	#weather-feed {
@@ -267,6 +277,9 @@ footer {
 	.picHolder img.last-active {
     z-index: 9;
 	}
+	footer {
+		margin-left: .3em;
+	}
 
 }	
 
@@ -280,9 +293,12 @@ footer {
 		padding-left: 2.6em;
 		padding-bottom: 1em;
 	}
+	nav {
+		margin-left: .4em;
+	}
 	nav li {
-		padding-right: 1.2em;
-		padding-left: 1em;
+		padding-right: .9em;
+		padding-left: .7em;
 		font-size: 1.8em;
 		line-height: 1.45em;
 	}
