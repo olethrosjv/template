@@ -12,7 +12,7 @@ style.css
 body {
 	font-family: Ubuntu;
 	font-size: 16px;
-	background-color: #fffff3;
+	background-color: white;
 }
 header {
 	padding: .4em;
@@ -40,32 +40,38 @@ h1 {
 
 
 nav {
-	background-color: rgb(95, 8, 8); 
+	background-color: rgb(255, 0, 0); 
 	line-height: 2em;
 	margin-bottom:.5em;
 	margin-left: .1em;
 	width: 99%;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 nav li {
 	padding-right: .8em;
 	padding-left: .3em;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-weight: 600;
 	line-height: 1.5em;
 	display: inline;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 nav a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
 nav a:hover {
 	font-size: 1.1em;
 	transition: .5s;
+}
+
+main {
+	margin: .5em;
+	padding: .5em;
 }
 
 
@@ -109,13 +115,15 @@ h2 {
 
 button {
 	display: inline-block;
+	border-radius: 10px;
 	line-height: 1.7em;
 	font-size: 1.25em;
-	padding: .15em 0;
+	font-weight: 400;
+	padding: .17em .1em;
 	font-kerning: auto;
 	margin: .4em .7em;
-	background-color: rgb(95, 8, 8);
-	color: white;
+	background-color: rgb(255, 0, 0);
+	color: black;
 }
 
 button:hover {
@@ -126,8 +134,9 @@ button:hover {
 	width: 2.7em;
   height: auto;
   display: inline-block;
-	margin: .4em .5em;
-  border-radius: 10%;
+	margin: .2em .5em;
+	padding: 0;
+  border-radius: 10px;
   font-size: 1.8em;
   color: #fff;
   opacity: 0.75;
@@ -158,11 +167,10 @@ button:hover {
 		 background: #55acee;
 }
 
-main {
+article {
 	margin-top: 1em;
 	margin-bottom: 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding: 1em 0;
 }
 
 
@@ -196,14 +204,15 @@ img {
 }
 
 footer {
-	background-color: rgb(95, 8, 8);
-	line-height: 2.3em;
-	font-size: 1.4em;
+	background-color: rgb(255, 0, 0);
+	line-height: 1.7em;
+	font-size: 1.5em;
 	margin-bottom: 1em;
 	margin-top: 1em; 
 	margin-left: .1em;
-	color: white;
+	color: black;
 	width: 99%;
+	font-weight: 600;
 	border-radius: 5px;
 	align-content: center;
 }
@@ -225,19 +234,18 @@ footer {
 	}
 
 	nav li {
-		padding-right: .6em;
+		padding-right: .5em;
 		padding-left: .3em;
 		font-size: 1.5em;
 		line-height: 1.45em;
 	}
-	main {
-		margin: 4em 2em;
-		padding: 1em 2em;
+	article {
+		margin: 2em 1em;
 	}
 	aside {
 		float: left;
-		margin: .2em 1em 2em 1em;
-		padding: .2em 1em 2em .6em;
+		margin: .2em 1em 1em .5em;
+		padding: .2em 1em 1em .4em;
 		padding-bottom: 2em;
 	}
 	#weather-feed {
@@ -296,8 +304,11 @@ footer {
 	nav {
 		margin-left: .4em;
 	}
+	nav ul {
+		padding-left: 1.5em;   
+	}
 	nav li {
-		padding-right: .9em;
+		padding-right: .7em;
 		padding-left: .7em;
 		font-size: 1.8em;
 		line-height: 1.45em;
