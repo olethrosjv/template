@@ -3,7 +3,7 @@
 // Gets posted data from the HTML form fields and creates local variables. The items with the ' marks around them are the name values from the fields in the HTML form example above. Note, the first three variables are required for all email messages (as described above).
 
 $EmailFrom = trim(stripslashes($_POST['email'])); 
-$EmailTo = "formcatcher@gmail.com";
+$EmailTo = "joseph.vaughn1@pcc.edu";
 $Subject = "Test";
 $User = trim(stripslashes($_POST['username'])); 
 $Phone = trim(stripslashes($_POST['telephone']));
