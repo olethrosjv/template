@@ -19,7 +19,7 @@ $current_date = date("Y-m-d"); // This date is created when the form is submitte
 
 $validationOK=true;
 if ($EmailFrom=="") $validationOK=false;
-if ($User=="") $validationOK=false;
+if ($Phone=="") $validationOK=false;
 if (!$validationOK) {
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
   exit;
@@ -57,7 +57,16 @@ $Body .= "\n";
 
 // This is the sendmail function which send an email message from the server to the email address listed in the $EmailTo variable above.
 
+ //Create a new PHPMailer instance
+ $mail = new PHPMailer;
+ //Tell PHPMailer to use SMTP - requires a local mail server
+ //Faster and safer than using mail()
+ $mail->isSMTP();
+ $mail->Host = 'localhost';
+ $mail->Port = 25;
+ 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+
 
 // If the page validates and there are no errors in the PHP, this line redirect to ok.html page, which is the "success page" for the form submission.
 
