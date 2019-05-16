@@ -6,22 +6,33 @@
 </head>
 <body>
 
-<!-- Fields marked (*) are required and are validated in the PHP code below -->
+
 
 <main id="formsection">
 	<form id="contact" name="contact" method="post" action="contact_process.php">
-		Email From:* 
-		  <input type="text" id="email" name="email" required><br />
-		User Name: 
-		  <input type="text" id="username" name="username" required/><br />
-		Telephone:* 
-		  <input type="text" id="telephone" name="telephone" /><br />
-		  <input type="submit" name="submit" value="Click to Send" />
+		<label for="name">Name:</label> 
+		<input type="text" id="name" name="name" required/><br>
+		
+		<label for="email">Email From:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="comments">Question or Comments:</label><br>
+		<textarea rows="4" cols="50" name="comments" id="comments"></textarea><br>
+
+		Choose One:
+		<label for="athlete"> Athlete  </label>
+		<input type="radio" name="registration" id="athlete" value="athlete">
+		<label for="volunteer"> Volunteer  </label>
+		<input type="radio" name="registration" id="volunteer" value="volunteer">
+		<label for="intrested-party"> Interested Party</label>
+		<input type="radio" name="registration" id="intrested-party" value="interested party"><br><br>
+
+		<input type="submit" name="submit" value="Click to Send" />
+
 	</form>
-	<p>The * next to the field denotes required data.</p>
 </main>
 
-<!-- Note above that there are three form input fields, Email From (email), User Name (username), and Telephone (telephone) -->
+
 
 
 
