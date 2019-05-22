@@ -1,67 +1,147 @@
+<!--
+    file name: register.html
+    coder: Joe Vaughn
+    Date: 05/21/2019
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ace in the Hole::What to Bring</title>
+
+    <meta name="description" content="The homepage for Ace in the Hole Events for Every Body triathalon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+
 <body>
-
-<!-- Fields marked (*) are required and are validated in the PHP code below -->
-
-<main id="formsection">
-	<form id="register-form" name="contact" method="post" action="registration_contact_process.php">
-		<label for="name">Name:</label> 
-		<input type="text" id="name" name="name" required/><br />
-		
-		<label for="email">Email:</label> 
-		<input type="text" id="email" name="email" required><br>
-		
-		<label for="age">Age:</label> 
-		<input type="number" id="age" name="age"><br>	
-		
-		<label for="contact-name">Emergency Contact Name:</label>
-		<input type="text" id="contact-name" name="contact-name"><br>	
-		
-		<label for="contact-telephone">Emergency Contact Telephone:</label>
-		<input type="tel" id="contact-telephone" name="contact-telephone" /><br>
-		
-		
-		Gender Identification:
-		<label for="male"> Male </label>
-  	<input type="radio" name="gender" id="male" value="male">
-  	<label for="female"> Female </label>
-  	<input type="radio" name="gender" id="female" value="female">
-  	<label for="non-binary"> Non-binary</label>
-		<input type="radio" name="gender" id="non-binary" value="other"><br>
-		
-		Registering as:
-		<label for="athlete"> Athlete  </label>
-		<input type="radio" name="registration" id="athlete" value="athlete">
-		<label for="volunteer"> Volunteer</label>
-		<input type="radio" name="registration" id="volunteer" value="volunteer"><br>
-
-		
-		<label for="event">Event Registering for:   </label>
-		<select name="event" id="event">
-			<option value="Long Course">Long Course</option>
-			<option value="Olympic">Olympic</option>
-			<option value="10 K">10 K</option>
-			<option value="Half Marathon">Half Marathon</option>
-			<option value="Sprint">Sprint</option>
-			<option value="Try-a-Tri">Try-a-Tri</option>
-		</select><br><br>
-
-		<label for="accommodations">Special Accommodations</label><br>
-		<textarea rows="4" cols="50" name="accommodations" id="accommodations"></textarea><br>
-
-		<input type="submit" name="submit" value="Click to Send" />
-	</form>
-</main>
-
-<!-- Note above that there are three form input fields, Email (email), Name (name), Age (age), and Emergency Contact Telephone (contact-telephone) -->
+    <header>
+        <h1>Ace in the Hole Multisport Events</h1>
+        <span id="tagline">We Offer Events for Every Body</span>
+    </header>
 
 
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../what-to-bring/what-to-bring.html">What to Bring</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#">Course Details</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
 
+    <main>
+
+        <aside>
+
+            <section id="weather-feed">
+                <div class="container-fluid" id="background">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div id="box">
+                            <div class="well text-center">
+                                <div id="icon"></div>
+                                <div id="city">Local Weather App</div>
+                                <div id="description">Finding your location...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="share">
+                <!-- social media icons -->
+                <!-- facebook -->
+                <a class="facebook" href="https://www.facebook.com/cas222cascade/" target="blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+
+                <!-- twitter -->
+                <a class="twitter" href="https://twitter.com/pcccas222" target="blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <!-- register button -->
+                <button onclick="window.location.href = 'register/register.html';">Sign Up</button>
+
+            </section>
+
+        </aside>
+        <!-- Most of unique page content will go here. -->
+
+        <article id="formsection">
+            <form id="register-form" name="contact" method="post" action="registration_contact_process.php">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required /><br />
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" required><br>
+
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age"><br>
+
+                <label for="contact-name">Emergency Contact Name: </label>
+                <input type="text" id="contact-name" name="contact-name"><br>
+
+                <label for="contact-telephone">Emergency Contact Phone: </label>
+                <input type="tel" id="contact-telephone" name="contact-telephone" /><br>
+
+
+                Gender Identification:<br>
+                <label for="male"> Male </label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female"> Female </label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="non-binary"> Non-binary</label>
+                <input type="radio" name="gender" id="non-binary" value="other"><br>
+
+                Registering as:<br>
+                <label for="athlete"> Athlete </label>
+                <input type="radio" name="registration" id="athlete" value="athlete">
+                <label for="volunteer"> Volunteer</label>
+                <input type="radio" name="registration" id="volunteer" value="volunteer"><br>
+
+                Event (you can choose one event each day): <br><br>
+                <label for="sat-event">Saturday</label>
+                <select name="sat-event" id="sat-event">
+                    <option value="Long Course">Long Course Triathlon</option>
+                    <option value="Olympic">Olympic Triathlon</option>
+                    <option value="Half Marathon">Half Marathon</option>
+                </select>
+                <label for="sun-event">Sunday</label>
+                <select name="sun-event" id="sun-event">
+                    <option value="10 K">10 K</option>
+                    <option value="Sprint">Sprint</option>
+                    <option value="Try-a-Tri">Try-a-Tri</option>
+                </select><br><br><br><br>
+                <label for="accommodations">Special Accommodations</label><br>
+                <textarea rows="4" cols="50" name="accommodations" id="accommodations"></textarea><br>
+
+                <input type="submit" name="submit" value="Click to Send" />
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <h4>&copy;2019 Ace in the Hole Multisport Events</h4>
+    </footer>
+
+    <script src="../js/ace.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </body>
+
 </html>
