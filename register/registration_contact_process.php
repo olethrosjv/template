@@ -11,7 +11,8 @@ $ContactName = trim(stripslashes($_POST['contact-name']));
 $ContactPhone = trim(stripslashes($_POST['contact-telephone']));
 $Gender = trim(stripslashes($_POST['gender']));
 $Registration = trim(stripslashes($_POST['registration']));
-$Event = trim(stripslashes($_POST['event']));
+$SatEvent = trim(stripslashes($_POST['sat-event']));
+$SunEvent = trim(stripslashes($_POST['sun-event']));
 $Accommodations = trim(stripslashes($_POST['accommodations']));
 $current_date = date("Y-m-d"); // This date is created when the form is submitted.
 
@@ -60,12 +61,13 @@ $Body .= "\n";
 $Body .= "The entrant's registration status: ";
 $Body .= $Registration;
 $Body .= "\n";
-$Body .= "The entrant's event is: ";
-$Body .= $Event;
+$Body .= "The entrant's event is/are: ";
+$Body .= $SatEvent;
+$Body .= " and ";
+$Body .= $SunEvent;
 $Body .= "\n";
 $Body .= "The entrant's special accommodations needed are: ";
 $Body .= $Accommodations;
-$Body .= "\n";
 
 // Instructor Note -- The ".=" means to append to (added to) the previous variable. So there is only one $Body variable, and all the other parts are appended to that one. The "\n" means to place a hard return between these lines in the email message. If the "\n" weren't included, all the items would be run together on one long line.
 
