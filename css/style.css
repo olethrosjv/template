@@ -79,7 +79,7 @@ main {
 aside {
 	margin: 1em .5em;
 	padding: 1em .5em;
-	
+
 }
 
 article {
@@ -211,9 +211,11 @@ form {
 	font-size: 1.4em;
 	max-width: 100%;
 }
+
 #formsection {
 	max-width: 100%;
 }
+
 form input {
 	margin-bottom: 1em;
 }
@@ -258,6 +260,11 @@ img {
 .slideshow-container {
 	display: none;
 
+}
+
+#facebook {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 footer {
@@ -333,17 +340,13 @@ footer {
 		margin-bottom: 2em;
 	}
 
-	#page-feeds {
-	
-	}
 
 	#facebook {
-	
+		padding-bottom: 1em;
+		margin-bottom: 1em;
 	}
 
-	#twitter-feed {
-		max-width: 90%;
-	}
+
 	#mobile-image {
 		display: none;
 	}
@@ -356,9 +359,9 @@ footer {
 		position: relative;
 	}
 
-	
 
-	
+
+
 
 	/* Hide the images by default */
 	.mySlides {
@@ -400,6 +403,7 @@ footer {
 	.dots {
 		align-content: center;
 	}
+
 	.dot {
 		cursor: pointer;
 		height: 15px;
@@ -458,6 +462,7 @@ footer {
 		max-width: 90%;
 		margin-left: 3em;
 	}
+
 	h1 {
 		font-size: 2.7em;
 		padding-left: 1.1em;
@@ -483,6 +488,7 @@ footer {
 		font-size: 1.8em;
 		line-height: 1.45em;
 	}
+
 	.slideshow-container {
 		margin-left: 10em;
 	}
