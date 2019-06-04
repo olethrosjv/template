@@ -264,7 +264,7 @@ img {
 
 #facebook {
 	padding-bottom: 1em;
-	margin-bottom: 1em;
+	margin: 1em 2em 2em .5em;
 }
 
 footer {
@@ -338,12 +338,6 @@ footer {
 	button {
 		display: block;
 		margin-bottom: 2em;
-	}
-
-
-	#facebook {
-		padding-bottom: 1em;
-		margin-bottom: 1em;
 	}
 
 
@@ -491,6 +485,12 @@ footer {
 
 	.slideshow-container {
 		margin-left: 10em;
+	}
+	#page-feeds {
+		padding-top: 1.5em;
+	}
+	#page-feeds div {
+		display: inline;
 	}
 }
 
