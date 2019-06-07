@@ -1,6 +1,6 @@
 /* Joe Vaughn
 style.css
-05/28/2019
+06/06/2019
 */
 
 /* Fonts */
@@ -452,10 +452,7 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-	body {
-		max-width: 90%;
-		margin-left: 3em;
-	}
+
 
 	h1 {
 		font-size: 2.7em;
